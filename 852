@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+int t ;
+cin>>t;
+while(t--){
+    int a,b;
+    cin>>a>>b;
+    int m=max(a,b);
+    int mi=min(a,b);
+     if (a==b){
+         cout<<"yes\n";
+     }
+     else{
+         int co=0;
+         for(int i=mi;i<=m;i*=2){
+             if(i==m){
+                 co++;
+                 break;
+             }
+         }
+         if(co>0){
+             cout<<"yes\n";
+         }
+         else{
+             cout<<"no\n";
+         }
+     }
+    
+}
+}
